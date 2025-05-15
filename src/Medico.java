@@ -32,4 +32,16 @@ public class Medico {
     public String getCorreo() {
         return correo;
     }
+
+    @Override
+    public String toString() {
+        return "Medico{" +
+                "idMedico=" + idMedico +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", especialidad='" + especialidad + '\'' +
+                ", correo='" + correo + '\'' +
+                '}';
+    }
 }
+

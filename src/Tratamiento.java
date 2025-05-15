@@ -1,7 +1,3 @@
-/**
- * La clase Tratamiento representa el tratamiento asignado a un paciente durante su ingreso.
- * Contiene detalles del tratamiento, como nombre, dosis y frecuencia.
- */
 public class Tratamiento {
     private int idTratamiento;
     private int idIngreso;
@@ -10,15 +6,6 @@ public class Tratamiento {
     private String frecuencia;
     private String observaciones;
 
-    /**
-     * Constructor para crear un objeto Tratamiento con los detalles completos.
-     * @param idTratamiento El ID único del tratamiento
-     * @param idIngreso El ID del ingreso asociado al tratamiento
-     * @param nombreTratamiento El nombre del tratamiento
-     * @param dosis La dosis prescrita para el tratamiento
-     * @param frecuencia La frecuencia de administración del tratamiento
-     * @param observaciones Observaciones adicionales sobre el tratamiento
-     */
     public Tratamiento(int idTratamiento, int idIngreso, String nombreTratamiento, String dosis, String frecuencia, String observaciones) {
         this.idTratamiento = idTratamiento;
         this.idIngreso = idIngreso;
@@ -28,5 +15,39 @@ public class Tratamiento {
         this.observaciones = observaciones;
     }
 
-    // Métodos getters y setters restantes...
+    public int getIdTratamiento() {
+        return idTratamiento;
+    }
+
+    public int getIdIngreso() {
+        return idIngreso;
+    }
+
+    public String getNombreTratamiento() {
+        return nombreTratamiento;
+    }
+
+    public String getDosis() {
+        return dosis;
+    }
+
+    public String getFrecuencia() {
+        return frecuencia;
+    }
+
+    public String getObservaciones() {
+        return observaciones;
+    }
+
+    @Override
+    public String toString() {
+        return "Tratamiento{" +
+                "idTratamiento=" + idTratamiento +
+                ", idIngreso=" + idIngreso +
+                ", nombreTratamiento='" + nombreTratamiento + '\'' +
+                ", dosis='" + dosis + '\'' +
+                ", frecuencia='" + frecuencia + '\'' +
+                ", observaciones='" + observaciones + '\'' +
+                '}';
+    }
 }
